@@ -30,18 +30,5 @@ namespace Library.MicroServices.WebApi.Repositories.Library
                     PublishedDate = book.PublishedDate.ToString("yyyy-MM-dd")
                 }).ToListAsync();
         }
-
-        //public async Task<BookResponse> InsertBookAsync(Book book)
-        //{
-        //    var newBook = new Book
-        //    {
-        //        Title = book.Title,
-        //        Author = book.Author,
-        //        Isbn = book.Isbn,
-        //        PublishedDate = book.PublishedDate
-        //    };
-        //    await _context.AddAsync(newBook);
-        //    await _context.SaveChangesAsync();
-        //}
     }
 }
