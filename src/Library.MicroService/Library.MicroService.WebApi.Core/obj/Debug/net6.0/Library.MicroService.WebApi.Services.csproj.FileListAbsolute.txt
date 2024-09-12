@@ -1,0 +1,11 @@
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\bin\Debug\net6.0\Library.MicroService.WebApi.Services.deps.json
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\bin\Debug\net6.0\Library.MicroService.WebApi.Services.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\bin\Debug\net6.0\Library.MicroService.WebApi.Services.pdb
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\Library.MicroService.WebApi.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\Library.MicroService.WebApi.Services.AssemblyInfoInputs.cache
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\Library.MicroService.WebApi.Services.AssemblyInfo.cs
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\Library.MicroService.WebApi.Services.csproj.CoreCompileInputs.cache
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\Library.MicroService.WebApi.Services.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\refint\Library.MicroService.WebApi.Services.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\Library.MicroService.WebApi.Services.pdb
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroService.WebApi.Core\obj\Debug\net6.0\ref\Library.MicroService.WebApi.Services.dll

@@ -1,0 +1,17 @@
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\bin\Debug\net6.0\Library.MicroServices.WebApi.Repositories.deps.json
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\bin\Debug\net6.0\Library.MicroServices.WebApi.Repositories.runtimeconfig.json
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\bin\Debug\net6.0\Library.MicroServices.WebApi.Repositories.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\bin\Debug\net6.0\Library.MicroServices.WebApi.Repositories.pdb
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\bin\Debug\net6.0\Library.MicroServices.WebApi.Models.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\bin\Debug\net6.0\Library.MicroServices.WebApi.Models.pdb
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.csproj.AssemblyReference.cache
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.AssemblyInfoInputs.cache
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.AssemblyInfo.cs
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.csproj.CoreCompileInputs.cache
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.csproj.CopyComplete
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\refint\Library.MicroServices.WebApi.Repositories.dll
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.pdb
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\Library.MicroServices.WebApi.Repositories.genruntimeconfig.cache
+D:\Projects\LibraryApp\src\Library.MicroService\Library.MicroServices.WebAPi.Repository\obj\Debug\net6.0\ref\Library.MicroServices.WebApi.Repositories.dll

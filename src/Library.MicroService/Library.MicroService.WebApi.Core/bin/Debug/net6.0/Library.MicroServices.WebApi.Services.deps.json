@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Library.MicroServices.WebApi.Services/1.0.0": {
+        "runtime": {
+          "Library.MicroServices.WebApi.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Library.MicroServices.WebApi.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
