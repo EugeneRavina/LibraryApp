@@ -1,11 +1,19 @@
 <mat-toolbar>
     <span>Library</span>
+    <span class="example-spacer"></span>
+    <button mat-flat-button color="primary" (click)="addBook()">Add Book</button>
 </mat-toolbar>
 
 <div *ngIf="books">
     <mat-card appearance="outlined" *ngFor="let book of books">
         <mat-card-header>Book</mat-card-header>
-        <mat-card-content >Title: {{book.title}}</mat-card-content>
+        <mat-card-content>Title: {{book.title}}</mat-card-content>
+        <mat-card-content>Author: {{book.author}}</mat-card-content>
+        <mat-card-content>Isbn: {{book.isbn}}</mat-card-content>
+        <mat-card-content>Published Date: {{book.publishedDate}}</mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-flat-button color="primary">Edit</button>
+        </mat-card-actions>
     </mat-card>
 </div>
 
