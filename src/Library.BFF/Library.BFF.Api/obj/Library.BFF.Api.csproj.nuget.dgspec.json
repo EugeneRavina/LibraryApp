@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Api\\Library.BFF.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Api\\Library.BFF.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Api\\Library.BFF.Api.csproj",
+        "projectName": "Library.BFF.Api",
+        "projectPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Api\\Library.BFF.Api.csproj",
+        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Core\\Library.BFF.Core.csproj": {
+                "projectPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Core\\Library.BFF.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Core\\Library.BFF.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Core\\Library.BFF.Core.csproj",
+        "projectName": "Library.BFF.Core",
+        "projectPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Core\\Library.BFF.Core.csproj",
+        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Models\\Library.BFF.Models.csproj": {
+                "projectPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Models\\Library.BFF.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Models\\Library.BFF.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Models\\Library.BFF.Models.csproj",
+        "projectName": "Library.BFF.Models",
+        "projectPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Models\\Library.BFF.Models.csproj",
+        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\LibraryApp\\src\\Library.BFF\\Library.BFF.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

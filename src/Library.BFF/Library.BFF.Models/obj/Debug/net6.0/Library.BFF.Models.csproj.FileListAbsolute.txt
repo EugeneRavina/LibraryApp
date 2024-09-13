@@ -1,0 +1,11 @@
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\bin\Debug\net6.0\Library.BFF.Models.deps.json
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\bin\Debug\net6.0\Library.BFF.Models.dll
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\bin\Debug\net6.0\Library.BFF.Models.pdb
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.AssemblyInfoInputs.cache
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.AssemblyInfo.cs
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.csproj.CoreCompileInputs.cache
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.dll
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\refint\Library.BFF.Models.dll
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.pdb
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\ref\Library.BFF.Models.dll

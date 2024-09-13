@@ -1,18 +1,16 @@
-﻿using Library.MicroServices.WebApi.Core;
-using Library.MicroServices.WebApi.Core.Models;
-using Library.MicroServices.WebApi.Models;
+﻿using Library.BFF.Core.Services;
+using Library.BFF.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel;
 
-namespace Library.MicroServices.WebApi.Controllers
+namespace Library.BFF.Api.Controllers
 {
     [ApiController]
-    [Route("api/WebApi/[controller]")]
-    public class LibraryWebApiController : ControllerBase
+    [Route("api/[controller]")]
+    public class LibraryBffApiController : ControllerBase
     {
         private readonly ILibraryService _libraryService;
 
-        public LibraryWebApiController(ILibraryService libraryService)
+        public LibraryBffApiController(ILibraryService libraryService)
         {
             _libraryService = libraryService;
         }
@@ -23,7 +21,7 @@ namespace Library.MicroServices.WebApi.Controllers
         {
             try
             {
-                var result = await _libraryService.GetAllBooksAsync();
+                var result = await _libraryService.GetAllBooks();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -38,8 +36,7 @@ namespace Library.MicroServices.WebApi.Controllers
         {
             try
             {
-                var result = await _libraryService.InsertBookAsync(bookRequest);
-
+                var result = await _libraryService.AddBook(bookRequest);
                 return Ok(result);
             }
             catch (Exception ex)
