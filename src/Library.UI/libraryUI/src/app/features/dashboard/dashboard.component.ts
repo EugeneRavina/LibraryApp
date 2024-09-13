@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, inject } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ApiService } from '../../services/api.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -6,6 +6,8 @@ import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import { IBook } from '../../models/book';
+import { MatDialog } from '@angular/material/dialog';
+import { BookFormDialogComponent } from '../book-form-dialog/book-form-dialog.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,6 +20,7 @@ import { IBook } from '../../models/book';
 
 export class DashboardComponent implements OnInit {
   books: IBook[] = [];
+  dialog = inject(MatDialog);
 
   constructor(private apiService: ApiService) {}
 
@@ -34,7 +37,6 @@ export class DashboardComponent implements OnInit {
   }
 
   addBook() : void {
-    console.log('click');
     const book : IBook = {
       title:"test",
       author: "eu",
@@ -50,5 +52,26 @@ export class DashboardComponent implements OnInit {
         console.error('ERROR FETCHING API', error);
       }
     );
+  }
+
+  editBook(book: IBook) : void {
+    console.log('edit', book);
+    const dialogRef = this.dialog.open(BookFormDialogComponent, {
+      data: {
+        book: book,
+      },
+    });
+
+    dialogRef.afterClosed().subscribe((result: IBook) => {
+      this.apiService.updateBook(result).subscribe(
+        (res: any) => {
+          console.log('add', res);
+        },
+        (error) => {
+          console.error('ERROR FETCHING API', error);
+        }
+      );
+    });
+
   }
 }
