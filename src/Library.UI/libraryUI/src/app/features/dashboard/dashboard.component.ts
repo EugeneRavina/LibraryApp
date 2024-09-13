@@ -21,6 +21,7 @@ import { BookFormDialogComponent } from '../book-form-dialog/book-form-dialog.co
 export class DashboardComponent implements OnInit {
   books: IBook[] = [];
   dialog = inject(MatDialog);
+  buttonActionType : 'edit' | 'add' = 'add';
 
   constructor(private apiService: ApiService) {}
 
@@ -38,20 +39,29 @@ export class DashboardComponent implements OnInit {
 
   addBook() : void {
     const book : IBook = {
-      title:"test",
-      author: "eu",
-      isbn: "string",
-      publishedDate: "2024-01-01"
+      title:"",
+      author: "",
+      isbn: "",
+      publishedDate: ""
     };
-
-    this.apiService.addBook(book).subscribe(
-      (res: any) => {
-        console.log('add', res);
+    const dialogRef = this.dialog.open(BookFormDialogComponent, {
+      data: {
+        book: book,
+        buttonActionType: 'add'
       },
-      (error) => {
-        console.error('ERROR FETCHING API', error);
-      }
-    );
+    });
+
+    dialogRef.afterClosed().subscribe((result: IBook) => {
+      this.apiService.addBook(result).subscribe(
+        (res: any) => {
+        console.log('add', res);
+        },
+        (error) => {
+          console.error('ERROR FETCHING API', error);
+        }
+      );
+    });
+   
   }
 
   editBook(book: IBook) : void {
@@ -59,6 +69,7 @@ export class DashboardComponent implements OnInit {
     const dialogRef = this.dialog.open(BookFormDialogComponent, {
       data: {
         book: book,
+        buttonActionType: 'edit'
       },
     });
 

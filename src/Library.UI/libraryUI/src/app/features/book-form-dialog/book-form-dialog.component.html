@@ -1,4 +1,7 @@
-<h2 mat-dialog-title>Book Edit</h2>
+<h2 mat-dialog-title>Book 
+    @if (buttonActionType === 'edit') { Edit } 
+    @if (buttonActionType === 'add') { Add } 
+</h2>
 
 <mat-dialog-content>
     <mat-form-field class="example-full-width">
@@ -23,5 +26,8 @@
 
 <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-flat-button cdkFocusInitial color="primary" [mat-dialog-close]="book" >Update</button>
+    <button mat-flat-button cdkFocusInitial color="primary" [mat-dialog-close]="book" >
+        @if (buttonActionType === 'edit') { Update } 
+        @if (buttonActionType === 'add') { Add } 
+    </button>
 </mat-dialog-actions>

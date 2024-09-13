@@ -16,6 +16,7 @@ import { IBook } from '../../models/book';
 
 export interface DialogData {
   book: IBook;
+  buttonActionType: 'edit' | 'add';
 }
 
 @Component({
@@ -31,6 +32,7 @@ export class BookFormDialogComponent {
   dialogRef = inject(MatDialogRef<BookFormDialogComponent>);
   data = inject<DialogData>(MAT_DIALOG_DATA);
 
+  buttonActionType = this.data.buttonActionType;
   book = this.data.book;
 
   onSubmit(): void {
