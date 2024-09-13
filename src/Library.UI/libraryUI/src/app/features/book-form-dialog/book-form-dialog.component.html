@@ -1,25 +1,26 @@
 <h2 mat-dialog-title>Book Edit</h2>
+
 <mat-dialog-content>
-    
     <mat-form-field class="example-full-width">
         <mat-label>Book Title</mat-label>
         <input matInput name="title" [(ngModel)]="book.title" placeholder="Ex. Harry Poter">
     </mat-form-field>
-       
+</mat-dialog-content>
+
+<mat-dialog-content>  
     <mat-form-field class="example-full-width">
-        <mat-label>Book Author</mat-label>
+    <mat-label>Book Author</mat-label>
         <input matInput [(ngModel)]="book.author" placeholder="Ex. J.K Rowling">
     </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-content>  
     <mat-form-field class="example-full-width">
         <mat-label>Book IsBn</mat-label>
         <input matInput [(ngModel)]="book.isbn" placeholder="Ex. string">
     </mat-form-field>
-    <!-- <mat-form-field class="example-full-width">
-        <mat-label>Book Published Date</mat-label>
-        <input matInput formControlName="publishedDate" placeholder="Ex. 2024-01-01">
-    </mat-form-field> -->
-
 </mat-dialog-content>
+
 <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
     <button mat-flat-button cdkFocusInitial color="primary" [mat-dialog-close]="book" >Update</button>
