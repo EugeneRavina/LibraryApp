@@ -1,0 +1,123 @@
+# Node modules and build artifacts
+node_modules/
+dist/
+build/
+coverage/
+
+# ASP.NET Core build and publish output
+bin/
+obj/
+out/
+Publish/
+artifacts/
+
+# ASP.NET Core configuration files
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# NuGet packages and lock files
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+project.json.lock
+.nuget/
+
+# User-specific files and IDE settings
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.userprefs
+*.suo
+*.user
+
+# Visual Studio specific files
+.vscode/
+.vs/
+*.vscode/*
+
+# Rider IDE specific files
+.idea/
+
+# Local history for Visual Studio and Rider
+.idea/
+.vscode/
+
+# Ignore logs and temp files
+*.log
+*.tlog
+*.tmp
+*.temp
+*.err
+*.out
+*.pid
+*.mdf
+*.ldf
+
+# Ignore lock files
+.lock.json
+.lock
+
+# Ignore the IIS config folder
+/.vs/
+
+# Ignore database and migration files
+*.mdf
+*.ldf
+*.sqlite
+*.sqlite3
+*.db
+
+# JetBrains Rider folder
+.idea/
+
+# DotNet Core generated folders
+.DS_Store
+*.DS_Store
+
+# Angular specific files
+.angular/
+*.log
+
+# IDE specific settings for Angular
+.angular/cache/
+
+# Exclude environment specific files (Angular)
+src/environments/*.ts
+
+# Ignore npm log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Yarn integrity file
+.yarn-integrity
+
+# Next.js build outputs
+.next/
+
+# Nuxt.js build outputs
+.nuxt/
+
+# Dependency directories
+jspm_packages/
+
+# Compiled TypeScript and JavaScript files
+*.tsbuildinfo
+*.js
+*.js.map
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
