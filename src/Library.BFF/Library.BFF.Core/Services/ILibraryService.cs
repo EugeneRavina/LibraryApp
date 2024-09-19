@@ -4,12 +4,12 @@ namespace Library.BFF.Core.Services
 {
     public interface ILibraryService
     {
-        Task<string> GetAllBooks();
+        Task<List<BookResponse>> GetAllBooks(CancellationToken cancellationToken = default);
 
-        Task<string> AddBook(BookRequest book);
+        Task<BookResponse> AddBook(BookRequest book, CancellationToken cancellationToken = default);
 
-        Task<string> GetBookById(int id);
+        Task<BookResponse> GetBookById(int id, CancellationToken cancellationToken = default);
 
-        Task<string> UpdateBook(int id, BookRequest bookRequest);
+        Task<BookResponse> UpdateBook(int id, BookRequest bookRequest, CancellationToken cancellationToken = default);
     }
 }

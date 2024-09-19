@@ -5,6 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
+// Register IHttpClientFactory
+builder.Services.AddHttpClient();
+
+//Register services
 builder.Services.AddScoped<ILibraryService, LibraryService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
