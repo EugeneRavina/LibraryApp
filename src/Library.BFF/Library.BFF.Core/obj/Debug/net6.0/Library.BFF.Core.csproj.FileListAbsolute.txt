@@ -1,6 +1,9 @@
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Core.deps.json
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Core.dll
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Core.pdb
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Models.dll
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Models.pdb
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.csproj.AssemblyReference.cache
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.AssemblyInfoInputs.cache
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.AssemblyInfo.cs
@@ -9,7 +12,5 @@ D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\refint\Library.BFF.Core.dll
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.pdb
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\ref\Library.BFF.Core.dll
-D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.csproj.AssemblyReference.cache
-D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Models.dll
-D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\bin\Debug\net6.0\Library.BFF.Models.pdb
-D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.csproj.CopyComplete
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library.BFF.Core.sourcelink.json
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Core\obj\Debug\net6.0\Library..DC9C8C43.Up2Date

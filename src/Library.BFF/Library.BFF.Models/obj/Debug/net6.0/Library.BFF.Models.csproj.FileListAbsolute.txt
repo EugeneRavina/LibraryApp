@@ -9,3 +9,4 @@ D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Libra
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\refint\Library.BFF.Models.dll
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.pdb
 D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\ref\Library.BFF.Models.dll
+D:\Projects\LibraryApp\src\Library.BFF\Library.BFF.Models\obj\Debug\net6.0\Library.BFF.Models.sourcelink.json
