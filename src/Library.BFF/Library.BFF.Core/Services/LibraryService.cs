@@ -1,4 +1,5 @@
 ﻿using Library.BFF.Models;
+using Microsoft.Extensions.Configuration;
 using System.Text;
 using System.Text.Json;
 
@@ -7,11 +8,13 @@ namespace Library.BFF.Core.Services
     public class LibraryService : ILibraryService
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        private const string baseUrl = "https://localhost:7268/api/WebApi/LibraryWebApi";
+        //private const string baseUrl = "https://localhost:7268/api/WebApi/LibraryWebApi";
+        private readonly string baseUrl;
 
-        public LibraryService(IHttpClientFactory httpClientFactory)
+        public LibraryService(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _httpClientFactory = httpClientFactory;
+            baseUrl = configuration.GetValue<string>("AppSettings:BaseUrl") ?? throw new ArgumentException("BaseUrl is missing in configuration");
         }
 
         public async Task<List<BookResponse>> GetAllBooks(CancellationToken cancellationToken = default)
