@@ -1,111 +1,140 @@
 ﻿using Library.BFF.Models;
-using Newtonsoft.Json;
-using System.Net.Http.Json;
+using Microsoft.Extensions.Configuration;
 using System.Text;
-using System.Xml.Linq;
-using static System.Reflection.Metadata.BlobBuilder;
+using System.Text.Json;
 
 namespace Library.BFF.Core.Services
 {
     public class LibraryService : ILibraryService
     {
-        private const string baseUrl = "https://localhost:7268/api/WebApi/LibraryWebApi";
+        private readonly IHttpClientFactory _httpClientFactory;
+        //private const string baseUrl = "https://localhost:7268/api/WebApi/LibraryWebApi";
+        private readonly string baseUrl;
 
-        public LibraryService()
-        { }
-
-        public async Task<string> GetAllBooks()
+        public LibraryService(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
+            _httpClientFactory = httpClientFactory;
+            baseUrl = configuration.GetValue<string>("AppSettings:BaseUrl") ?? throw new ArgumentException("BaseUrl is missing in configuration");
+        }
+
+        public async Task<List<BookResponse>> GetAllBooks(CancellationToken cancellationToken = default)
+        {
+            using var httpClient = _httpClientFactory.CreateClient();
+
             try
             {
-                HttpClient client = new HttpClient();
-                string url = $"{baseUrl}/books";
-                HttpResponseMessage response = await client.GetAsync(url);
+                using var response = await httpClient.GetAsync($"{baseUrl}/books", cancellationToken);
 
-                if (!response.IsSuccessStatusCode)
+                response.EnsureSuccessStatusCode();
+
+                var responseBody = await response.Content.ReadAsStringAsync(cancellationToken);
+                var books = JsonSerializer.Deserialize<List<BookResponse>>(responseBody, new JsonSerializerOptions
                 {
-                    throw new ArgumentException("Internal Server Error");
-                }
+                    PropertyNameCaseInsensitive = true
+                });
 
-                var result = response.Content.ReadAsStringAsync().Result;
-
-                return result;
+                return books ?? new List<BookResponse>();
             }
-            catch (Exception ex)
+            catch (HttpRequestException httpEx)
             {
-                throw new Exception(ex.Message);
+                // Log the error or handle it accordingly
+                throw new Exception("Error fetching book data", httpEx);
+            }
+            catch (JsonException jsonEx)
+            {
+                // Handle JSON deserialization errors
+                throw new Exception("Error parsing the book response", jsonEx);
             }
         }
 
-        public async Task<string> AddBook(BookRequest book)
+        public async Task<BookResponse> AddBook(BookRequest book, CancellationToken cancellationToken = default)
         {
+            using var httpClient = _httpClientFactory.CreateClient();
+
             try
             {
-                HttpClient client = new HttpClient();
+                var requestContent = new StringContent(JsonSerializer.Serialize(book), Encoding.UTF8, "application/json");
+                using var response = await httpClient.PostAsync($"{baseUrl}/book", requestContent, cancellationToken);
 
-                string url = $"{baseUrl}/book";
-                HttpResponseMessage response = await client.PostAsJsonAsync(url, book);
+                response.EnsureSuccessStatusCode();
 
-                if (!response.IsSuccessStatusCode)
+                var responseBody = await response.Content.ReadAsStringAsync(cancellationToken);
+                var newBook = JsonSerializer.Deserialize<BookResponse>(responseBody, new JsonSerializerOptions
                 {
-                    throw new ArgumentException("Internal Server Error");
-                }
+                    PropertyNameCaseInsensitive = true
+                });
 
-                var result = response.Content.ReadAsStringAsync().Result;
-
-                return result;
+                return newBook ?? new BookResponse();
             }
-            catch (Exception ex)
+            catch (HttpRequestException httpEx)
             {
-                throw new Exception(ex.Message);
+                // Log the error or handle it accordingly
+                throw new Exception("Error creating book data", httpEx);
+            }
+            catch (JsonException jsonEx)
+            {
+                // Handle JSON deserialization errors
+                throw new Exception("Error parsing the book response", jsonEx);
             }
         }
 
-        public async Task<string> GetBookById(int id)
+        public async Task<BookResponse> GetBookById(int id, CancellationToken cancellationToken = default)
         {
+            using var httpClient = _httpClientFactory.CreateClient();
+
             try
             {
-                HttpClient client = new HttpClient();
+                using var response = await httpClient.GetAsync($"{baseUrl}/book/{id}", cancellationToken);
 
-                string url = $"{baseUrl}/book/{id}";
-                HttpResponseMessage response = await client.GetAsync(url);
+                response.EnsureSuccessStatusCode();
 
-                if (!response.IsSuccessStatusCode)
+                var responseBody = await response.Content.ReadAsStringAsync(cancellationToken);
+                var book = JsonSerializer.Deserialize<BookResponse>(responseBody, new JsonSerializerOptions
                 {
-                    throw new ArgumentException("Internal Server Error");
-                }
+                    PropertyNameCaseInsensitive = true
+                });
 
-                var result = response.Content.ReadAsStringAsync().Result;
-
-                return result;
+                return book ?? new BookResponse();
             }
-            catch (Exception ex)
+            catch (HttpRequestException httpEx)
             {
-                throw new Exception(ex.Message);
+                // Log the error or handle it accordingly
+                throw new Exception("Error fetching book data", httpEx);
+            }
+            catch (JsonException jsonEx)
+            {
+                // Handle JSON deserialization errors
+                throw new Exception("Error parsing the book response", jsonEx);
             }
         }
 
-        public async Task<string> UpdateBook(int id, BookRequest bookRequest)
+        public async Task<BookResponse> UpdateBook(int id, BookRequest bookRequest, CancellationToken cancellationToken = default)
         {
+            using var httpClient = _httpClientFactory.CreateClient();
             try
             {
-                HttpClient client = new HttpClient();
+                var requestContent = new StringContent(JsonSerializer.Serialize(bookRequest), Encoding.UTF8, "application/json");
+                using var response = await httpClient.PutAsync($"{baseUrl}/book/{id}", requestContent, cancellationToken);
 
-                string url = $"{baseUrl}/book/{id}";
-                HttpResponseMessage response = await client.PutAsJsonAsync(url, bookRequest);
+                response.EnsureSuccessStatusCode();
 
-                if (!response.IsSuccessStatusCode)
+                var responseBody = await response.Content.ReadAsStringAsync(cancellationToken);
+                var updatedBook = JsonSerializer.Deserialize<BookResponse>(responseBody, new JsonSerializerOptions
                 {
-                    throw new ArgumentException("Internal Server Error");
-                }
+                    PropertyNameCaseInsensitive = true
+                });
 
-                var result = response.Content.ReadAsStringAsync().Result;
-
-                return result;
+                return updatedBook;
             }
-            catch (Exception ex)
+            catch (HttpRequestException httpEx)
             {
-                throw new Exception(ex.Message);
+                // Log the error or handle it accordingly
+                throw new Exception("Error fetching book data", httpEx);
+            }
+            catch (JsonException jsonEx)
+            {
+                // Handle JSON deserialization errors
+                throw new Exception("Error parsing the book response", jsonEx);
             }
         }
     }
